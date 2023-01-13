@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <body>
+
+        <button class="chatbot-toggle" style="cursor:pointer">
+            <img style="width: 35px" src="./img/tchat.png"></img>
+        </button>
+
+        <div id="chatbot-container">
+            <div class="chatbot-header">
+                <a target="_blank" href="https://faceone.fr"><img id="logo" src="./img/logo.png" alt="Chatbot Profile Picture"></a>
+            </div>
+            <div id="chatbot-messages"></div>
+            <form id="chatbot-form">    
+                <input type="text" id="chatbot-input" placeholder="Type your message here...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+
+
+        <script src="./chatbot.js"></script>
+    </body>
+</body>
+</html>

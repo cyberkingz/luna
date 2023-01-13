@@ -1,0 +1,213 @@
+#chatbot-container {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 0px;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 10px;
+    display: default; /* added to hide the container by default */
+}
+
+
+#chatbot-messages {
+    height: 80%;
+    overflow: auto;
+    padding: 10px;
+}
+
+
+.user-message {
+    background: linear-gradient(45deg, #1ab245, #3cd567);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    float: right;
+    clear: both;
+    max-width: 80%;
+}
+
+.chatbot-message {
+    background-color: #00bfff;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    float: left;
+    clear: both;
+    max-width: 80%;
+}
+
+#chatbot-form {
+    position: absolute;
+    bottom: 10px; /* increase the bottom property to give more space */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px; /* added to increase the space between the button and the bottom border */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+}
+
+
+#chatbot-input {
+    width: 85%;
+    cursor: text;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgb(220, 220, 220);
+    outline: none;
+    background: white;
+
+}
+
+#chatbot-form button {
+    width: 90%;
+    padding: 10px;
+    background: linear-gradient(to right, blueviolet, blue);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 10px;
+    transition: 0.80s;
+}
+
+#chatbot-form button:hover {
+    cursor: pointer;
+    color: #fff;
+    transition: 0.80s;
+    background: linear-gradient(to right, blue, blueviolet);
+}
+
+
+.chatbot-toggle {
+    animation: 1s;
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    background: linear-gradient(to right, blueviolet, blue);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 255, 0.512);
+    right: 20px;
+    transition: 0.50s;
+    padding: 10px; /* added to increase the clickable area of the button */
+}
+.chatbot-toggle:hover {
+    transition: 0.50s;
+    width: 60px;
+    height: 60px;
+    animation: 1s;
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    background: linear-gradient(to right, blueviolet, blue);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 255, 0.512);
+    right: 20px;
+    padding: 10px; /* added to increase the clickable area of the button */
+}
+
+
+
+.chatbot-header {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, blueviolet, blue);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.chatbot-header img {
+    width: 120px; /* adjust the width of the profile picture */
+    height: 50px; /* adjust the height of the profile picture */
+    float: left; /* to align the picture to the left */
+    margin-right: 10px; /* to create space between the picture and the bot's name */
+    cursor: pointer;
+}
+
+.chatbot-message img {
+    width: 30px; /* adjust the width of the profile picture */
+    height: 30px; /* adjust the height of the profile picture */
+    border-radius: 50%; /* to make the profile picture circular */
+    float: left; /* to align the picture to the left */
+    margin-right: 10px; /* to create space between the picture and the message */
+}
+
+
+.chatbot-message p {
+    margin-top: 10px;
+}
+
+.chatbot-info {
+    background-color: #00bfff; /* same background color as the chatbox */
+    color: #fff; /* same text color as the chatbox */
+    padding: 10px; /* add padding for spacing */
+    border-radius: 5px; /* to match the chatbox */
+    clear: both; /* to clear any floated elements */
+}
+    
+    .chatbot-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    }
+
+    .chatbot-message-container {
+        background-color: #ffffff;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        clear: both;
+        max-width: 80%;
+    }
+    
+    .chatbot-info {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        background-color: #ffffff; /* same background color as the chatbox */
+        color: black; /* same text color as the chatbox */
+        padding: 0px; /* add padding for spacing */
+        border-radius: 5px; /* to match the chatbox */
+        clear: both; /* to clear any floated elements */
+    }
+    
+    .bot-response-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: start;
+        padding: 0px; /* add padding for spacing */
+        margin-top: 0px; /* add a margin to separate the bot details and the message */
+        border-radius: 5px; /* to match the chatbox */
+        background: linear-gradient(to right, blueviolet, blue);
+
+    }
+    
+    .bot-response-container p {
+        margin: 10px;
+        margin-left: 10px;
+        padding: 0;
+    }
